@@ -8,7 +8,7 @@ This program serves as a demonstration of basic data retrieval using API Calls v
 ## Assumptions
 * The user has a Microsoft SQL Server ver. 21.5.14 server and database set up with identical names to the connection string found on line 10 of `appsettings.json`.
 * The user's MSS database is populated with one or more items contained in a table called *Products* which is populated with one or more rows containing valid data matching the syntax of the model found in `\Models\Products.cs`.
-* The user is using .NET Framework ver. 8.0.410.
+* The user is using .NET Framework ver. 8.0.410 with the .NET 8 SDK installed.
 * The user has git installed.
 * The user is using a code editing software such as Visual Studio Code on a Windows machine.
 
@@ -31,3 +31,4 @@ Ensure that the connection string found in `appsettings.json` has the matching s
 * Run the preexisting project file by running the command: `dotnet run --project Demo.csproj`.
 * Open the localhost URL found in the terminal (ex. http://localhost:5247).
 * Modify the URL to hit the endpoint (ex. http://localhost:5247/api/products).
+* If an SQL certificate error is encountered, ensure that `TrustServerCertificate=True;` is in the connection string.
